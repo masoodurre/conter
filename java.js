@@ -1,9 +1,11 @@
 let counter = 0;
 let one =  document.getElementById("mb")
+let one1 =  document.getElementById("mj")
   
 
 function ass() {
     counter++;
+   
     document.getElementById("pms").innerHTML= counter;
 }
 
@@ -12,11 +14,39 @@ function mss() {
     counter= 0;
     document.getElementById("pms").innerHTML= counter;
 }
+
+function subtract () {
+    counter = counter-1;
+    document.getElementById("pms").innerHTML= counter;
+}
+
+function addition () {
+    counter = counter+10;
+    document.getElementById("pms").innerHTML= counter;
+}
+
+
+
 // ایک مشق مکمل ہوئی ہے
 
 function table(){
+    one1.innerHTML = '';
     for (let num = 1; num < 10; num++)
    { document.getElementById("mj").innerHTML+=num + "<br>" + " " 
+}
+}
+
+function oddnumber(){
+    one1.innerHTML = '';
+    for (let onum = 1; onum < 15; onum+=2)
+   { document.getElementById("mj").innerHTML+=onum + "<br>" + " " 
+}
+}
+
+function evennumber(){
+    one1.innerHTML = '';
+    for (let num2 = 2; num2 < 14; num2+=2)
+   { document.getElementById("mj").innerHTML+=num2 + "<br>" + " " 
 }
 }
 
@@ -62,6 +92,7 @@ function odad (){
    else {document.getElementById('khan').innerHTML= 'odd'}
 
 }
+alert ("میں آپ کو اپنی ویب سائٹ میں خوش آمدید کہتا ہوں");
      
         
     
