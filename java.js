@@ -1,4 +1,5 @@
 let counter = 0;
+let one =  document.getElementById("mb")
   
 
 function ass() {
@@ -22,10 +23,29 @@ function table(){
 // دوسری مشق مکمل ہوئی ہے
 
 function table2 ()
-{
+{ 
+    one.innerHTML = '';
     for(let number = 1; number<11; number++)
     {
-    document.getElementById("mb").innerHTML+= "2x"+ number + "=" + number*2+ "<br>" + " "    
+   one .innerHTML+= "2x"+ number + "=" + number*2+ "<br>" + " "    
+    }
+}
+
+function table3 ()
+{
+    one.innerHTML = '';
+    for(let number = 1; number<11; number++)
+    {
+    one .innerHTML+= "3x"+ number + "=" + number*3+ "<br>" + " "    
+    }
+}
+
+function table4 ()
+{
+    one.innerHTML= '';
+    for(let number = 1; number<11; number++)
+    {
+    one .innerHTML+= "4x"+ number + "=" + number*4+ "<br>" + " "    
     }
 }
 // یہاں سے اووڈ اور ایون کا کاؤنٹر ہے
